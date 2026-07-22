@@ -9,6 +9,8 @@
     <meta name="description"
         content="Unhas em gel, alongamento e manutenção com atendimento individual em Jundiaí. Conheça o trabalho da Gabi Nails e consulte horários pelo WhatsApp.">
     <meta name="theme-color" content="#6f3040">
+    <meta name="color-scheme" content="light">
+    <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
@@ -20,55 +22,62 @@
     <meta property="og:image:alt" content="Francesinha delicada feita pela Gabi Nails">
     <meta property="og:site_name" content="Gabi Nails">
 
+    <link rel="preload" as="image" href="unha1.jpeg" fetchpriority="high" decoding="async">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BeautySalon",
-    "name": "Gabi Nails",
-    "description": "Unhas em gel, alongamento e manutenção com atendimento individual em Jundiaí.",
-    "telephone": "+55 11 93030-7516",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rua Rangel Pestana, 720 - Bioma Yu Tin Tin",
-      "addressLocality": "Jundiaí",
-      "addressRegion": "SP",
-      "postalCode": "13201-000",
-      "addressCountry": "BR"
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Gabi Nails",
+  "description": "Unhas em gel, alongamento e manutenção com atendimento individual em Jundiaí.",
+  "telephone": "+55 11 93030-7516",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Rangel Pestana, 720 - Bioma Yu Tin Tin",
+    "addressLocality": "Jundiaí",
+    "addressRegion": "SP",
+    "postalCode": "13201-000",
+    "addressCountry": "BR"
+  },
+  "sameAs": [
+    "https://www.instagram.com/gabistudio.nails/"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
     },
-    "sameAs": [
-      "https://www.instagram.com/gabistudio.nails/"
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
-      }
-    ],
-    "paymentAccepted": "Pix, Dinheiro, Cartão de débito, Cartão de crédito"
-  }
-  </script>
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "15:00"
+    }
+  ],
+  "paymentAccepted": "Pix, Dinheiro, Cartão de débito, Cartão de crédito"
+}
+</script>
 </head>
 
 <body>
     <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
 
-    <header class="site-header" id="inicio">
+    <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="#inicio" aria-label="Gabi Nails - voltar ao início">
                 <span class="brand-mark">
@@ -82,10 +91,10 @@
             </a>
 
             <nav class="desktop-nav" aria-label="Navegação principal">
-                <a href="#inicio">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#trabalhos">Trabalhos</a>
-                <a href="#contato">Contato</a>
+                <a href="#inicio" data-nav-link aria-current="page">Início</a>
+                <a href="#servicos" data-nav-link>Serviços</a>
+                <a href="#trabalhos" data-nav-link>Trabalhos</a>
+                <a href="#contato" data-nav-link>Contato</a>
             </nav>
 
             <a class="button button-small header-cta"
@@ -104,10 +113,10 @@
 
         <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação para celular" hidden>
             <div class="container mobile-menu-inner">
-                <a href="#inicio">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#trabalhos">Trabalhos</a>
-                <a href="#contato">Contato</a>
+                <a href="#inicio" data-nav-link aria-current="page">Início</a>
+                <a href="#servicos" data-nav-link>Serviços</a>
+                <a href="#trabalhos" data-nav-link>Trabalhos</a>
+                <a href="#contato" data-nav-link>Contato</a>
 
                 <a class="button"
                     href="https://wa.me/5511930307516?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Gabi%20Nails%20e%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis."
@@ -119,7 +128,7 @@
     </header>
 
     <main id="conteudo-principal">
-        <section class="hero section">
+        <section class="hero section" id="inicio">
             <div class="hero-decoration hero-decoration-one" aria-hidden="true"></div>
             <div class="hero-decoration hero-decoration-two" aria-hidden="true"></div>
 
@@ -160,7 +169,7 @@
                                 d="M7 2v3M17 2v3M3.5 9h17M5.5 4h13a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
                         </svg>
 
-                        <span>Atendimento de segunda a sábado, das 8h às 17h.</span>
+                        <span>Atendimento de segunda a sexta, das 8h às 17h, e sábado, das 8h às 15h.</span>
                     </div>
                 </div>
 
@@ -235,8 +244,7 @@
                 </div>
 
                 <div class="services-grid">
-                    <article class="service-card service-card-featured reveal">
-                        <span class="service-label">Principal serviço</span>
+                    <article class="service-card reveal">
 
                         <div class="service-icon" aria-hidden="true">
                             <svg viewBox="0 0 48 48">
@@ -253,12 +261,6 @@
                             Beleza, resistência e acabamento delicado para manter suas unhas bonitas por mais tempo.
                         </p>
 
-                        <a class="text-link"
-                            href="https://wa.me/5511930307516?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Gabi%20Nails%20e%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis."
-                            target="_blank" rel="noopener noreferrer">
-                            Consultar horários
-                            <span aria-hidden="true">→</span>
-                        </a>
                     </article>
 
                     <article class="service-card reveal">
@@ -316,84 +318,106 @@
 
         <section class="section portfolio" id="trabalhos">
             <div class="container">
-                <div class="section-heading section-heading-row reveal">
+                <div class="section-heading section-heading-split reveal">
                     <div>
                         <p class="eyebrow">
                             <span aria-hidden="true"></span>
                             Trabalhos
                         </p>
 
-                        <h2>Detalhes que fazem a diferença</h2>
+                        <h2>Delicadeza em branco e rosé</h2>
                     </div>
 
                     <p>
-                        Cada trabalho é realizado com atenção, cuidado e acabamento delicado.
+                        Cada trabalho é realizado com atenção, cuidado e acabamento delicado, valorizando tons
+                        claros, elegantes e femininos.
                     </p>
                 </div>
 
                 <div class="portfolio-grid">
-                    <button class="portfolio-card portfolio-card-large reveal" type="button"
-                        data-gallery-image="unha1.jpeg" data-gallery-alt="Francesinha delicada feita pela Gabi Nails"
-                        data-gallery-caption="Francesinha delicada" aria-label="Ampliar foto: Francesinha delicada">
+                    <button class="portfolio-card reveal" type="button" data-gallery-image="unha1.jpeg"
+                        data-gallery-alt="Unhas brancas e rosé delicadas feitas pela Gabi Nails"
+                        data-gallery-caption="Branco e rosé delicado" aria-label="Ampliar foto: Branco e rosé delicado">
                         <span class="portfolio-image-wrap">
-                            <img src="unha1.jpeg" alt="Francesinha delicada feita pela Gabi Nails" width="720"
-                                height="900" loading="lazy">
+                            <img src="unha1.jpeg" alt="Unhas brancas e rosé delicadas feitas pela Gabi Nails"
+                                width="720" height="900" loading="lazy" decoding="async">
 
                             <span class="zoom-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
-                                    <circle cx="11" cy="11" r="6.5" />
-                                    <path d="m16 16 4 4M11 8v6M8 11h6" />
+                                    <circle cx="11" cy="11" r="6.5"></circle>
+                                    <path d="m16 16 4 4M11 8v6M8 11h6"></path>
                                 </svg>
                             </span>
                         </span>
 
                         <span class="portfolio-caption">
-                            <strong>Francesinha delicada</strong>
-                            <small>Clássica, leve e elegante</small>
+                            <strong>Branco e rosé delicado</strong>
+                            <small>Leve, clean e elegante</small>
                         </span>
                     </button>
 
                     <button class="portfolio-card reveal" type="button" data-gallery-image="unha2.jpeg"
-                        data-gallery-alt="Unhas azuis com brilho e nail art feitas pela Gabi Nails"
-                        data-gallery-caption="Azul com brilho e nail art"
-                        aria-label="Ampliar foto: Azul com brilho e nail art">
+                        data-gallery-alt="Unhas brancas e rosé elegantes feitas pela Gabi Nails"
+                        data-gallery-caption="Branco e rosé elegante" aria-label="Ampliar foto: Branco e rosé elegante">
                         <span class="portfolio-image-wrap">
-                            <img src="unha2.jpeg" alt="Unhas azuis com brilho e nail art feitas pela Gabi Nails"
-                                width="720" height="900" loading="lazy">
+                            <img src="unha2.jpeg" alt="Unhas brancas e rosé elegantes feitas pela Gabi Nails"
+                                width="720" height="900" loading="lazy" decoding="async">
 
                             <span class="zoom-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
-                                    <circle cx="11" cy="11" r="6.5" />
-                                    <path d="m16 16 4 4M11 8v6M8 11h6" />
+                                    <circle cx="11" cy="11" r="6.5"></circle>
+                                    <path d="m16 16 4 4M11 8v6M8 11h6"></path>
                                 </svg>
                             </span>
                         </span>
 
                         <span class="portfolio-caption">
-                            <strong>Azul com brilho e nail art</strong>
-                            <small>Personalidade em cada detalhe</small>
+                            <strong>Branco e rosé elegante</strong>
+                            <small>Acabamento suave e sofisticado</small>
                         </span>
                     </button>
 
                     <button class="portfolio-card reveal" type="button" data-gallery-image="unha3.jpeg"
-                        data-gallery-alt="Unhas na cor vinho com detalhe dourado feitas pela Gabi Nails"
-                        data-gallery-caption="Vinho com detalhe dourado"
-                        aria-label="Ampliar foto: Vinho com detalhe dourado">
+                        data-gallery-alt="Unhas brancas e rosé com acabamento delicado feitas pela Gabi Nails"
+                        data-gallery-caption="Branco e rosé com acabamento delicado"
+                        aria-label="Ampliar foto: Branco e rosé com acabamento delicado">
                         <span class="portfolio-image-wrap">
-                            <img src="unha3.jpeg" alt="Unhas na cor vinho com detalhe dourado feitas pela Gabi Nails"
-                                width="720" height="900" loading="lazy">
+                            <img src="unha3.jpeg"
+                                alt="Unhas brancas e rosé com acabamento delicado feitas pela Gabi Nails" width="720"
+                                height="900" loading="lazy" decoding="async">
 
                             <span class="zoom-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24">
-                                    <circle cx="11" cy="11" r="6.5" />
-                                    <path d="m16 16 4 4M11 8v6M8 11h6" />
+                                    <circle cx="11" cy="11" r="6.5"></circle>
+                                    <path d="m16 16 4 4M11 8v6M8 11h6"></path>
                                 </svg>
                             </span>
                         </span>
 
                         <span class="portfolio-caption">
-                            <strong>Vinho com detalhe dourado</strong>
-                            <small>Sofisticação com equilíbrio</small>
+                            <strong>Branco e rosé delicado</strong>
+                            <small>Visual romântico e moderno</small>
+                        </span>
+                    </button>
+
+                    <button class="portfolio-card reveal" type="button" data-gallery-image="unha4.jpeg"
+                        data-gallery-alt="Unhas brancas e rosé clássicas feitas pela Gabi Nails"
+                        data-gallery-caption="Branco e rosé clássico" aria-label="Ampliar foto: Branco e rosé clássico">
+                        <span class="portfolio-image-wrap">
+                            <img src="unha4.jpeg" alt="Unhas brancas e rosé clássicas feitas pela Gabi Nails"
+                                width="720" height="900" loading="lazy" decoding="async">
+
+                            <span class="zoom-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="11" cy="11" r="6.5"></circle>
+                                    <path d="m16 16 4 4M11 8v6M8 11h6"></path>
+                                </svg>
+                            </span>
+                        </span>
+
+                        <span class="portfolio-caption">
+                            <strong>Branco e rosé clássico</strong>
+                            <small>Delicadeza para qualquer momento</small>
                         </span>
                     </button>
                 </div>
@@ -540,9 +564,11 @@
                         </div>
 
                         <div>
-                            <h3>Horário</h3>
-                            <p>Segunda a sábado</p>
-                            <small>Das 8h às 17h</small>
+                            <div>
+                                <h3>Horário</h3>
+                                <p>Segunda a sexta, das 8h às 17h</p>
+                                <small>Sábado, das 8h às 15h</small>
+                            </div>
                         </div>
                     </article>
 
@@ -591,7 +617,7 @@
                     <h2>Pronta para cuidar das suas unhas?</h2>
 
                     <p>
-                        Fale com a Gabi pelo WhatsApp, conheça os horários disponíveis e escolha o estilo do seu próximo
+                        Fale comigo pelo WhatsApp, conheça os horários disponíveis e escolha o estilo do seu próximo
                         atendimento.
                     </p>
                 </div>
@@ -614,14 +640,9 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a class="brand brand-footer" href="#inicio" aria-label="Gabi Nails - voltar ao início">
-                    <span class="brand-mark" aria-hidden="true">
-                        <svg viewBox="0 0 64 64">
-                            <path class="brand-ring"
-                                d="M32 4.5c15.19 0 27.5 12.31 27.5 27.5S47.19 59.5 32 59.5 4.5 47.19 4.5 32 16.81 4.5 32 4.5Z" />
-                            <path class="brand-swish" d="M17 43c9.3 5.6 22.9 4.9 31.2-2.3" />
-                            <text x="32" y="37" text-anchor="middle">GN</text>
-                            <path class="brand-star" d="m49.2 13.4 1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1 1-2.5Z" />
-                        </svg>
+                    <span class="brand-mark">
+                        <img class="brand-logo" src="eu.jpg" alt="" width="100" height="100" loading="lazy"
+                            decoding="async">
                     </span>
 
                     <span class="brand-copy">
@@ -645,8 +666,8 @@
                 </p>
 
                 <p>
-                    Segunda a sábado<br>
-                    Das 8h às 17h
+                    Segunda a sexta, das 8h às 17h<br>
+                    Sábado, das 8h às 15h
                 </p>
             </div>
 
@@ -686,14 +707,14 @@
         aria-labelledby="gallery-modal-caption" hidden>
         <div class="gallery-modal-backdrop" data-modal-close></div>
 
-        <div class="gallery-modal-content" role="document">
+        <div class="gallery-modal-content">
             <button class="gallery-modal-close" type="button" aria-label="Fechar imagem" data-modal-close>
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="m6 6 12 12M18 6 6 18" />
                 </svg>
             </button>
 
-            <img id="gallery-modal-image" src="unha1.jpeg" alt="">
+            <img id="gallery-modal-image" src="unha1.jpeg" alt="" decoding="async">
             <p id="gallery-modal-caption"></p>
         </div>
     </div>
